@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-port = 587  # For starttls
+port = 587
 # Account information - Email information
 smtp_server = "smtp.gmail.com"
 sender_email = "ivanneto0101@gmail.com"
@@ -39,7 +39,7 @@ def send_email(receiver):
 
     # SMTP session
     try:
-        session = smtplib.SMTP(smtp_server, 587)
+        session = smtplib.SMTP(smtp_server, port)
         session.starttls()
         session.login(sender_email, password)
         text = message.as_string()
