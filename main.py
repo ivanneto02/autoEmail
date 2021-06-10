@@ -22,7 +22,7 @@ def send_email(receiver):
     message['Subject'] = "Undergraduate Research"
 
     # Message content
-    # message.attach(MIMEText(message_content, 'plain'))
+    message.attach(MIMEText(message_content, 'plain'))
 
     # Attachment information
     # attachment_name = "MyResume.pdf"
