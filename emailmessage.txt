@@ -1,3 +1,1 @@
-Hello, my name is Ivan Neto.
-I'm a first-year undergraduate student studying Computer Science and I'm highly interested in doing undergraduate research.
-Would you be open to scheduling a one-on-one meeting to discuss your research and how I could potentially contribute?
+<insert message>
