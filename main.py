@@ -7,8 +7,8 @@ from email import encoders
 port = 587
 # Account information - Email information
 smtp_server = "smtp.gmail.com"
-sender_email = "ivanneto0101@gmail.com"
-receiver_email = "ineto001@ucr.edu"
+sender_email = "<insert sender email>"
+receiver_email = "<insert receiver email>"
 password = input("Type your password and press enter:")
 
 def send_email(receiver):
@@ -22,11 +22,11 @@ def send_email(receiver):
     message['Subject'] = "Undergraduate Research"
 
     # Message content
-    message.attach(MIMEText(message_content, 'plain'))
+    # message.attach(MIMEText(message_content, 'plain'))
 
     # Attachment information
-    attachment_name = "MyResume.pdf"
-    attachment_file = open(attachment_name, 'rb') # Open the file as binary mode
+    # attachment_name = "MyResume.pdf"
+    # attachment_file = open(attachment_name, 'rb') # Open the file as binary mode
 
     # Payload
     payload = MIMEBase('application', 'pdf')
